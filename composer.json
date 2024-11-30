@@ -1,0 +1,20 @@
+{
+    "name": "cannoral/dynamic-queue",
+    "description": "dynamic-queue",
+    "type": "project",
+    "require": {
+        "vladimir-yuldashev/laravel-queue-rabbitmq": "^14.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DynamicQueue\\": "app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DynamicQueue\\DynamicQueueServiceProvider"
+            ]
+        }
+    }
+}
